@@ -1,0 +1,286 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Signup Form</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<style>
+    html,body{
+        padding: 0%;
+        margin: 0%;
+        height: auto;
+    }
+    .signup{
+        display:flexbox;
+        justify-content: center;
+        border:2px solid grey;
+    }
+    .top{
+        display: flex;
+        justify-content: space-between;
+        
+    }
+    .icons li {
+    list-style: none;
+    display: inline-block;
+    }
+    
+    .mr-1, .mx-1 {
+    margin-right: 0.25rem !important;
+    }
+    .icons li a span{
+    color: #636161;
+    font-size: 13px;
+    background: transparent;
+    width: 32px;
+    height: 32px;
+    line-height: 27px;
+    text-align: center;
+    display: block;
+    border: 2px solid #ddd;
+    display: inline-block;
+    border-radius: 50%;
+}
+    .one{
+        position: absolute;
+        z-index: 999;
+        margin: 0 auto;
+        left: 38%;
+        right: 0;
+        top: 13%; /* Adjust this value to move the positioned div up and down */
+        
+    }
+    
+    .two{
+        position: absolute;
+        z-index: 999;
+        margin: 0 auto;
+        left: 32%;
+        right: 0;
+        top: 23%; /* Adjust this value to move the positioned div up and down */
+    
+    }
+    .three{
+        position: absolute;
+        z-index: 999;
+        margin: 0 auto;
+        left: 25%;
+        right: 0;
+        top: 33%; /* Adjust this value to move the positioned div up and down */
+    
+    }
+    .facebook{
+        
+        position: absolute;
+        z-index: 999;
+        margin: 0 auto;
+        left: 25%;
+        right: 0;
+        border-radius: 22px;
+        top: 37%; /* Adjust this value to move the positioned div up and down */
+        background-color: rgb(68, 144, 216);
+        border: none;
+        color: white;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        cursor: pointer;
+        border-radius: 12px;
+        width: 5.5cm;
+        }
+    .twitter{
+        position: absolute;
+        z-index: 999;
+        margin: 0 auto;
+        left: 25%;
+        right: 0;
+        top: 46%; /* Adjust this value to move the positioned div up and down */
+    
+        background-color: skyblue;
+        border: none;
+        color: white;
+        padding: 15px 32px;
+        text-align: cente   r;
+        text-decoration: none;
+        display: block;
+        font-size: 16px;
+        margin: 4px 2px;
+        cursor: pointer;
+        border-radius: 12px;
+        width: 5.5cm;
+    
+    }
+    .google{
+        position: absolute;
+        z-index: 999;
+        margin: 0 auto;
+        left: 25%;
+        right: 0;        
+        top: 55%; /*Adjust this value to move the positioned div up and down*/
+        background-color: tomato;
+        border: none;
+        color: white;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        cursor: pointer;
+        border-radius: 12px;
+        width: 5.5cm;
+            
+    }
+    .un{
+        position: absolute;
+        z-index: 999;
+        margin: 0 auto;
+        left: 50%;
+        margin-top: 0.2cm;
+        right: 0;        
+        top: 32%; /*Adjust this value to move the positioned div up and down*/
+    }
+    .unn{
+        position: absolute;
+        z-index: 999;
+        margin: 0 auto;
+        left: 50%;
+        margin-top: 0.2cm;
+        right: 0;        
+        size: 10cm;
+        top: 36%; /*Adjust this value to move the positioned div up and down*/
+    }
+    .eid{
+        position: absolute;
+        z-index: 999;
+        margin: 0 auto;
+        left: 50%;
+        margin-top: 0.2cm;
+        right: 0;        
+        top: 42%; /*Adjust this value to move the positioned div up and down*/
+    }
+    .eidd{
+        position: absolute;
+        z-index: 999;
+        margin: 0 auto;
+        left: 50%;
+        margin-top: 0.2cm;
+        right: 0;        
+        top: 45%; /*Adjust this value to move the positioned div up and down*/
+    }
+    .pwd{
+        position: absolute;
+        z-index: 999;
+        margin: 0 auto;
+        left: 50%;
+        margin-top: 0.2cm;
+        right: 0;        
+        top: 51%; /*Adjust this value to move the positioned div up and down*/
+    }
+    .pwdd{
+        position: absolute;
+        z-index: 999;
+        margin: 0 auto;
+        left: 50%;
+        margin-top: 0.2cm;
+        right: 0;        
+        top: 54%; /*Adjust this value to move the positioned div up and down*/
+    }
+    .ts{
+        position: absolute;
+        z-index: 999;
+        margin: 0 auto;
+        left: 50%;
+        margin-top: 0.2cm;
+        right: 0;        
+        top: 60%; /*Adjust this value to move the positioned div up and down*/
+    }
+
+    .join{
+        position: absolute;
+        z-index: 999;
+        margin: 0 auto;
+        left: 50%;
+        right: 0;        
+        top: 66%; /*Adjust this value to move the positioned div up and down*/
+        background-color: rgb(39, 199, 87);
+        border: none;
+        color: white;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        cursor: pointer;
+        border-radius: 22px;
+        width: 5cm;
+            
+    }
+
+    .hrtag{
+        display: flex;
+        position: absolute;
+        z-index: 999;
+        margin: 0 auto;
+        border-left: 3px solid rgb(138, 141, 138);
+        height: 200px;
+        left: 45%;
+        top: 34%;
+    }
+</style>
+</head>
+<body>
+    <div class="signup">
+        <div class="top">
+            <h2>Sign Up Form</h2>
+            <ul class=icons>
+                <li class="mr-1"><a href="#"><span class="fa fa-window-minimize"></span></a></li>
+                <li class="mx-1"><a href="#"><span class="fa fa-window-maximize"></span></a></li>
+                <li class="mx-1"><a href="#"><span class="fa fa-close"></span></a></li>
+            </ul>
+        </div>
+
+    </div>
+    <div class="container">
+        <div class="one">
+           <h1> Create a new account</h1>
+        </div>
+
+        <div class="two">
+            Come join our community! Let's start up your account. Already have one? <a href="www.google.com">Sign in here</a>
+        </div>
+
+        <div class="three">
+            You can also sign in with these:
+        </div>
+
+        <div class="four">
+            <input type="button" value="Facebook" class="facebook"></input>
+            <input type="button" value="Twitter" class="twitter"></input>
+            <input type="button" value="Google" class="google"></input>
+        </div>
+        
+        
+        <p class="un">User name</p>
+        <input type="text" placeholder="Username" class="unn" size="40"></input>
+
+        <p class="eid">Email Id</p>
+        <input type="text" placeholder="inbox@email.com" class="eidd" size="40"></input>
+
+        <p class="pwd">Password</p>
+        <input type="text" placeholder="********" class="pwdd" size="40"></input>
+
+        <p class="ts">By submitting the form you agree to out <a href="">Terms of Service</a></p>
+        <input type="button" value="Join" class="join"></input>
+
+        <div class="hrtag">
+                       
+        </div>
+    </div>
+</body>
+</html>
