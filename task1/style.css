@@ -1,0 +1,225 @@
+html,body{
+    padding: 0%;
+    margin: 0%;
+
+}
+
+.signup{
+    border:2px solid grey;
+}
+.top{
+    display: flex;
+    justify-content: space-between;
+    
+}
+.icons li {
+list-style: none;
+display: inline-block;
+}
+
+.mr-1, .mx-1 {
+margin-right: 0.25rem !important;
+}
+.icons li a span{
+color: #636161;
+font-size: 13px;
+background: transparent;
+width: 32px;
+height: 32px;
+line-height: 27px;
+text-align: center;
+display: block;
+border: 2px solid #ddd;
+display: inline-block;
+border-radius: 50%;
+}
+.one{
+    position: absolute;
+    z-index: 999;
+    margin: 0 auto;
+    left: 38%;
+    right: 0;
+    top: 15%; /* Adjust this value to move the positioned div up and down */
+    
+}
+
+.two{
+    position: absolute;
+    z-index: 999;
+    margin: 0 auto;
+    left: 32%;
+    right: 0;
+    top: 23%; /* Adjust this value to move the positioned div up and down */
+
+}
+.three{
+    position: absolute;
+    z-index: 999;
+    margin: 0 auto;
+    left: 20%;
+    right: 0;
+    top: 30%; /* Adjust this value to move the positioned div up and down */
+
+}
+.facebook{
+    
+    position: absolute;
+    z-index: 999;
+    margin: 0 auto;
+    left: 20%;
+    right: 0;
+    border-radius: 22px;
+    top: 33%; /* Adjust this value to move the positioned div up and down */
+    background-color: rgb(38, 0, 255);
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 22px;
+    width: 5cm;
+    }
+.twitter{
+    position: absolute;
+    z-index: 999;
+    margin: 0 auto;
+    left: 20%;
+    right: 0;
+    top: 41%; /* Adjust this value to move the positioned div up and down */
+
+    background-color: rgb(116, 192, 255);
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 22px;
+    width: 5cm;
+
+}
+.google{
+    position: absolute;
+    z-index: 999;
+    margin: 0 auto;
+    left: 20%;
+    right: 0;        
+    top: 49%; /*Adjust this value to move the positioned div up and down*/
+    background-color: rgb(238, 12, 12);
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 22px;
+    width: 5cm;
+        
+}
+.un{
+    position: absolute;
+    z-index: 999;
+    margin: 0 auto;
+    left: 60%;
+    margin-top: 0.2cm;
+    right: 0;        
+    top: 28%; /*Adjust this value to move the positioned div up and down*/
+}
+.unn{
+    position: absolute;
+    z-index: 999;
+    margin: 0 auto;
+    left: 60%;
+    margin-top: 0.2cm;
+    right: 0;        
+    top: 32%; /*Adjust this value to move the positioned div up and down*/
+}
+.eid{
+    position: absolute;
+    z-index: 999;
+    margin: 0 auto;
+    left: 60%;
+    margin-top: 0.2cm;
+    right: 0;        
+    top: 36%; /*Adjust this value to move the positioned div up and down*/
+}
+.eidd{
+    position: absolute;
+    z-index: 999;
+    margin: 0 auto;
+    left: 60%;
+    margin-top: 0.2cm;
+    right: 0;        
+    top: 40%; /*Adjust this value to move the positioned div up and down*/
+}
+.pwd{
+    position: absolute;
+    z-index: 999;
+    margin: 0 auto;
+    left: 60%;
+    margin-top: 0.2cm;
+    right: 0;        
+    top: 44%; /*Adjust this value to move the positioned div up and down*/
+}
+.pwdd{
+    position: absolute;
+    z-index: 999;
+    margin: 0 auto;
+    left: 60%;
+    margin-top: 0.2cm;
+    right: 0;        
+    top: 48%; /*Adjust this value to move the positioned div up and down*/
+}
+.ts{
+    position: absolute;
+    z-index: 999;
+    margin: 0 auto;
+    left: 60%;
+    margin-top: 0.2cm;
+    right: 0;        
+    top: 52%; /*Adjust this value to move the positioned div up and down*/
+}
+
+.join{
+    position: absolute;
+    z-index: 999;
+    margin: 0 auto;
+    left: 60%;
+    right: 0;        
+    top: 56%; /*Adjust this value to move the positioned div up and down*/
+    background-color: rgb(39, 199, 87);
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 22px;
+    width: 5cm;
+        
+}
+
+.hrtag{
+    display: flex;
+    position: absolute;
+    z-index: 999;
+    margin: 0 auto;
+border-left: 3px solid rgb(138, 141, 138);
+height: 250px;
+left: 45%;
+top: 28%;
+}
+
