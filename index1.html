@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup Form</title>
+	<link rel="shortcut icon" href="./images/icon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<style>
+    html,body{
+        padding:0;
+        margin:0;
+        height:100%
+    }
+    .container{
+        display:flex;
+        height:100%;
+        justify-content: center;
+        align-items:center;
+    }
+    .page{
+        background-color:aliceblue;
+        max-width:700px;
+        padding:32px;
+    }
+
+    .top{
+    display: flex;
+    justify-content: space-between;
+    
+    }
+    .icons li {
+    list-style: none;
+    display: inline-block;
+    }
+    .one, .two{
+       align-content: center;
+
+    }
+    
+
+.mr-1, .mx-1 {
+margin-right: 0.25rem !important;
+}
+.icons li a span{
+color: #636161;
+font-size: 13px;
+background: transparent;
+width: 32px;
+height: 32px;
+line-height: 27px;
+text-align: center;
+display: block;
+border: 2px solid #ddd;
+display: inline-block;
+border-radius: 50%;
+}
+.hr{
+    display: flex;
+    
+border-left: 3px solid rgb(138, 141, 138);
+height: 250px;
+
+}
+.bottom{
+    display: flex;
+    justify-content:space-between;
+}
+.facebook{
+  
+    background-color: rgb(38, 0, 255);
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 22px;
+    width: 5cm;
+    }
+.twitter{
+    
+
+    background-color: rgb(116, 192, 255);
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 22px;
+    width: 5cm;
+
+}
+.google{
+     /*Adjust this value to move the positioned div up and down*/
+    background-color: rgb(238, 12, 12);
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 22px;
+    width: 5cm;
+        
+</style>
+<body>
+    <div class="container">
+        <div class="page">
+            <div class="top">
+                <h2>Sign Up Form</h2>
+                <ul class=icons>
+                    <li class="mr-1"><a href="#"><span class="fa fa-window-minimize"></span></a></li>
+                    <li class="mx-1"><a href="#"><span class="fa fa-window-maximize"></span></a></li>
+                    <li class="mx-1"><a href="#"><span class="fa fa-close"></span></a></li>
+                </ul>
+            </div>
+            <hr>
+            <div class="one">
+                <h1 align=center> Create a new account</h1>
+             </div>
+     
+             <div class="two">
+                <p align=center>Come join our community! Let's start up your account. Already have one? <a href="" style="text-decoration: none;">Sign in here</a> </p> 
+             </div>
+             <div class="bottom">
+             <div class="three">
+                 You can also join using these:
+                 <br>
+                    <input type="button" value="Facebook" class="facebook"></input> <br>
+                    <input type="button" value="Twitter" class="twitter"></input> <br>
+                    <input type="button" value="Google" class="google"></input>
+                
+             </div>
+             <div class="hr">
+
+             </div>
+             <div class="right">
+                <p class="un">User name</p>
+                <input type="text" placeholder="Username" class="unn"></input>
+        
+                <p class="eid">Email Id</p>
+                <input type="text" placeholder="inbox@email.com" class="eidd"></input>
+        
+                <p class="pwd">Password</p>
+                <input type="text" placeholder="********" class="pwdd"></input>
+        
+                <p class="ts">By submitting the form you agree to out Terms of Service</p>
+                <input type="button" value="Join" class="join"></input>
+             </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
