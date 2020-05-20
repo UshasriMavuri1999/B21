@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Help Desk Form</title>
+</head>
+<style>
+    html {
+        margin: 0;
+        padding: 0;
+        height: 100%;
+        box-sizing: border-box;
+    }
+    
+    .container {
+        display: flex;
+        height: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .content {
+        background-color: #92ABCE;
+        width: 90%;
+        padding: 32px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 16px;
+    }
+    
+    .heading {
+        font-weight: bold;
+        font-size: large;
+        padding: 16px;
+    }
+    
+    .left {
+        height: 704px;
+        text-align: center;
+        color: white;
+        width: 30%;
+        background-color: #1C3056;
+        border-top-left-radius: 16px;
+        border-bottom-left-radius: 16px;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .right {
+        padding: 32px;
+        padding-top: 64px;
+        /* padding-bottom: 64px; */
+        width: 50%;
+        align-items: center;
+        background-color: #EEEEEE;
+        border-top-right-radius: 16px;
+        border-bottom-right-radius: 16px;
+    }
+    
+    label {
+        font-weight: bold;
+    }
+    
+    input {
+        width: 90%;
+        /* padding-bottom: 20px; */
+        height: 50px;
+        /* float: left; */
+        color: #fff;
+        font-size: 15px;
+        font-weight: 400;
+        text-indent: 18px;
+        padding: 0 60px 0 0;
+        background: rgba(255, 255, 255, 0.9);
+        border-radius: 5px 5px 5px 5px;
+        border: 0px;
+        box-shadow: none;
+        outline: none;
+    }
+    
+    .need {
+        display: flex;
+        justify-content: space-evenly;
+        background: #fff;
+        border-radius: 8px;
+    }
+    
+    .urgency {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .urgency-inner {
+        width: 150px;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        text-align: center;
+        background-color: #fff;
+        padding: 2px;
+        border-radius: 8px;
+    }
+    
+    form {
+        padding-bottom: 64px;
+        padding: 32px;
+    }
+    
+    .urgency-right {
+        max-width: 60%;
+        /* margin-left: -300px; */
+    }
+    
+    .bottom {
+        padding-left: 0;
+        border-bottom-right-radius: 16px;
+        margin-left: -30px;
+        width: 714px;
+        background-color: #fff;
+        display: flex;
+        justify-content: space-around;
+        padding: 8px;
+        transform: translate(0px, 30px);
+    }
+    
+    .btn {
+        display: flex;
+        align-items: center;
+        text-align: center;
+        width: 100px;
+        border-radius: 32px;
+        background-color: #1C3056;
+        color: white;
+    }
+</style>
+
+<body>
+    <div class="container">
+        <div class="content">
+            <div class="left">
+                <h2>creativefuse</h2>
+                <ul>
+                    <li>Introduction</li>
+                    <li>Human Basics</li>
+                    <li>HelpDesk Request</li>
+                    <li>Confirmation</li>
+                </ul>
+            </div>
+            <div class="right">
+                <h3 class="heading">Hey there! Is it safe to assume you're in need of some help? Well, no worries-we've got your back! Let's get started on your HelpDesk Ticket by filling out the info below.
+                </h3>
+                <form action="">
+                    <label for="name">Full Name</label> <br>
+                    <input type="text" name="name" placeholder="You can call me" id=""> <br>
+                    <label for="company">Company</label> <br>
+                    <input type="text" name="company" placeholder="I work here..." id=""> <br>
+                    <label for="email">Email</label> <br>
+                    <input type="email" name="email" placeholder="You can send status updates here" id=""> <br>
+                    <label for="request">Request/Need</label> <br>
+                    <div class="need">
+                        <p>
+                            something's broken</p>
+                        <p>content updates</p>
+                        <p>add new functionality</p>
+                        <p>something else</p>
+                    </div>
+
+                    <label for="urgency">Urgency</label> <br>
+                    <div class="urgency">
+                        <div class="urgency-inner">
+                            <p>urgent</p>
+                            <p>not urgent</p>
+                        </div>
+
+                        <div class="urgency-right">
+                            Urgent request will be prioritized over other items in our pipeline. A 25% urgency charge will be added to the total cost of the completed request.
+                        </div>
+
+
+                    </div>
+
+                </form>
+                <div class="bottom">
+                    <input type="button" value="Back" class="btn">
+                    <input type="button" value="Next" class="btn">
+                </div>
+
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
