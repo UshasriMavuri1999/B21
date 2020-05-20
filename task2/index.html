@@ -181,20 +181,95 @@
         border-radius: 50%;
         display: inline-block;
     }
+    
+    .timeline {
+        position: relative;
+        max-width: 200px;
+        margin: 0 auto;
+    }
+    
+    .timeline::after {
+        content: '';
+        position: absolute;
+        width: 1px;
+        border: 2px dashed #92ABCE;
+        top: 0;
+        bottom: 0;
+        left: 50%;
+        margin-left: -3px;
+        height: 230px;
+        margin-top: 15px;
+    }
+    
+    .cont {
+        padding: 10px 40px;
+        position: relative;
+        background-color: inherit;
+        width: 60%;
+    }
+    
+    .cont::after {
+        content: '';
+        position: absolute;
+        width: 25px;
+        height: 25px;
+        right: -17px;
+        background-color: #92ABCE;
+        border: 4px solid #92ABCE;
+        top: 15px;
+        border-radius: 50%;
+        z-index: 1;
+    }
+    
+    #spl:after {
+        border: 4px solid white;
+        background-color: #1C3056;
+    }
+    
+    .right {
+        left: 50%;
+    }
+    
+    .right::after {
+        left: -16px;
+    }
 </style>
 
 <body>
     <div class="container">
         <div class="content">
-            <div class="left" style="position: relative;">
+            <div class="left " id="timeline-content" style="position: relative;">
                 <h2 class="heading1">creativefuse</h2>
 
-                <ul style="position: absolute;top:300px">
-                    <li>Introduction</li>
-                    <li>Human Basics</li>
-                    <li>HelpDesk Request</li>
-                    <li>Confirmation</li>
-                </ul>
+                <div class="timeline" style="position: absolute;top:200px" class="timeline">
+                    <div class="cont right">
+                        <div class="content1">
+                            <p>Introduction</p>
+
+                        </div>
+                    </div>
+                    <div class="cont right spl" id="spl">
+                        <div class="content1">
+
+                            <p>Human Basics</p>
+
+                        </div>
+                    </div>
+                    <div class="cont right">
+                        <div class="content1">
+                            <p>HelpDesk Request</p>
+
+                        </div>
+                    </div>
+                    <div class="cont right">
+                        <div class="content1">
+                            <p>Confirmation</p>
+
+                        </div>
+                    </div>
+                </div>
+
+
                 <div class="circle" style="position: absolute;top:600px;left:150px;"></div>
                 <div class="arrow-up" style="position: absolute;top:677px">
                     <div class="arrow-up opt" style="position: absolute;top:-70px"></div>
