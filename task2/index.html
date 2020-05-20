@@ -23,7 +23,7 @@
     
     .content {
         background-color: #92ABCE;
-        width: 90%;
+        width: 70%;
         padding: 32px;
         display: flex;
         justify-content: center;
@@ -32,13 +32,23 @@
     }
     
     .heading {
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
         font-weight: bold;
         font-size: large;
-        padding: 16px;
+        padding: 32px;
+        padding-bottom: 8px;
+    }
+    
+    .heading1 {
+        letter-spacing: 2px;
+        font-size: 2rem;
+        position: absolute;
+        top: 6%;
+        left: 20%;
     }
     
     .left {
-        height: 704px;
+        height: 776px;
         text-align: center;
         color: white;
         width: 30%;
@@ -50,10 +60,8 @@
     }
     
     .right {
-        padding: 32px;
-        padding-top: 64px;
-        /* padding-bottom: 64px; */
-        width: 50%;
+        padding: 16px;
+        width: 60%;
         align-items: center;
         background-color: #EEEEEE;
         border-top-right-radius: 16px;
@@ -66,9 +74,7 @@
     
     input {
         width: 90%;
-        /* padding-bottom: 20px; */
         height: 50px;
-        /* float: left; */
         color: #fff;
         font-size: 15px;
         font-weight: 400;
@@ -79,6 +85,7 @@
         border: 0px;
         box-shadow: none;
         outline: none;
+        margin-bottom: 20px;
     }
     
     .need {
@@ -86,6 +93,7 @@
         justify-content: space-evenly;
         background: #fff;
         border-radius: 8px;
+        margin-bottom: 20px;
     }
     
     .urgency {
@@ -106,74 +114,119 @@
     }
     
     form {
+        padding-top: 0;
         padding-bottom: 64px;
         padding: 32px;
     }
     
     .urgency-right {
         max-width: 60%;
-        /* margin-left: -300px; */
     }
     
     .bottom {
-        padding-left: 0;
         border-bottom-right-radius: 16px;
-        margin-left: -30px;
-        width: 714px;
+        margin-left: -15px;
+        width: 42.5vw;
         background-color: #fff;
         display: flex;
         justify-content: space-around;
-        padding: 8px;
-        transform: translate(0px, 30px);
+        text-align: center;
+        padding: 4px;
+        transform: translate(0px, 14px);
+    }
+    
+    .special {
+        background-color: #92ABCE;
+        padding: 4px;
+        border-radius: 4px;
     }
     
     .btn {
-        display: flex;
-        align-items: center;
-        text-align: center;
         width: 100px;
         border-radius: 32px;
         background-color: #1C3056;
         color: white;
+        margin-top: 20px;
+    }
+    
+    .btn1 {
+        background-color: #fff;
+        color: #1C3056;
+        font-weight: bold;
+        border: 2px solid #1C3056;
+    }
+    
+    .arrow-up {
+        width: 0;
+        height: 0;
+        border-left: 100px solid transparent;
+        border-right: 100px solid transparent;
+        border-bottom: 100px solid #92ABCE;
+    }
+    
+    ul li {
+        list-style-type: circle;
+    }
+    
+    .opt {
+        border-left: 150px solid transparent;
+        border-right: 150px solid transparent;
+        border-bottom: 200px solid #92ABCE;
+    }
+    
+    .circle {
+        background-color: #92ABCE;
+        height: 25px;
+        width: 25px;
+        border-radius: 50%;
+        display: inline-block;
     }
 </style>
 
 <body>
     <div class="container">
         <div class="content">
-            <div class="left">
-                <h2>creativefuse</h2>
-                <ul>
+            <div class="left" style="position: relative;">
+                <h2 class="heading1">creativefuse</h2>
+
+                <ul style="position: absolute;top:300px">
                     <li>Introduction</li>
                     <li>Human Basics</li>
                     <li>HelpDesk Request</li>
                     <li>Confirmation</li>
                 </ul>
+                <div class="circle" style="position: absolute;top:600px;left:150px;"></div>
+                <div class="arrow-up" style="position: absolute;top:677px">
+                    <div class="arrow-up opt" style="position: absolute;top:-70px"></div>
+                </div>
+
             </div>
             <div class="right">
                 <h3 class="heading">Hey there! Is it safe to assume you're in need of some help? Well, no worries-we've got your back! Let's get started on your HelpDesk Ticket by filling out the info below.
                 </h3>
                 <form action="">
                     <label for="name">Full Name</label> <br>
-                    <input type="text" name="name" placeholder="You can call me" id=""> <br>
+                    <input type="text" name="name" placeholder="You can call me..." id=""> <br>
                     <label for="company">Company</label> <br>
                     <input type="text" name="company" placeholder="I work here..." id=""> <br>
                     <label for="email">Email</label> <br>
-                    <input type="email" name="email" placeholder="You can send status updates here" id=""> <br>
+                    <input type="email" name="email" placeholder="You can send status updates here..." id=""> <br>
                     <label for="request">Request/Need</label> <br>
                     <div class="need">
-                        <p>
+                        <p class="special">
                             something's broken</p>
                         <p>content updates</p>
                         <p>add new functionality</p>
                         <p>something else</p>
                     </div>
 
+
+
                     <label for="urgency">Urgency</label> <br>
                     <div class="urgency">
                         <div class="urgency-inner">
                             <p>urgent</p>
-                            <p>not urgent</p>
+                            <p class="special">not urgent</p>
                         </div>
 
                         <div class="urgency-right">
@@ -185,7 +238,7 @@
 
                 </form>
                 <div class="bottom">
-                    <input type="button" value="Back" class="btn">
+                    <input type="button" value="Back" class="btn btn1">
                     <input type="button" value="Next" class="btn">
                 </div>
 
