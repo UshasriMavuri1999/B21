@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Help Desk Form</title>
+</head>
+<style>
+    html {
+        margin: 0;
+        padding: 0;
+        height: 100%;
+        box-sizing: border-box;
+    }
+    
+    .container {
+        display: flex;
+        height: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .content {
+        background-color: #92ABCE;
+        width: 70%;
+        padding: 32px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 16px;
+    }
+    
+    .heading {
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-weight: bold;
+        font-size: large;
+        padding: 32px;
+        padding-bottom: 8px;
+    }
+    
+    .heading1 {
+        letter-spacing: 2px;
+        font-size: 2rem;
+        position: absolute;
+        top: 6%;
+        left: 20%;
+    }
+    
+    .left {
+        height: 776px;
+        text-align: center;
+        color: white;
+        width: 40%;
+        background-color: #1C3056;
+        border-top-left-radius: 16px;
+        border-bottom-left-radius: 16px;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .right {
+        padding: 16px;
+        width: 60%;
+        align-items: center;
+        background-color: #EEEEEE;
+        border-top-right-radius: 16px;
+        border-bottom-right-radius: 16px;
+        z-index: 999;
+    }
+    
+    label {
+        font-weight: bold;
+    }
+    
+    input {
+        width: 90%;
+        height: 50px;
+        color: #fff;
+        font-size: 15px;
+        font-weight: 400;
+        text-indent: 18px;
+        padding: 0 60px 0 0;
+        background: rgba(255, 255, 255, 0.9);
+        border-radius: 5px 5px 5px 5px;
+        border: 0px;
+        box-shadow: none;
+        outline: none;
+        margin-bottom: 20px;
+    }
+    
+    .need {
+        display: flex;
+        justify-content: space-evenly;
+        background: #fff;
+        border-radius: 8px;
+        margin-bottom: 20px;
+    }
+    
+    .urgency {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .urgency-inner {
+        width: 150px;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        text-align: center;
+        background-color: #fff;
+        padding: 2px;
+        border-radius: 8px;
+    }
+    
+    form {
+        padding-top: 0;
+        padding-bottom: 64px;
+        padding: 32px;
+    }
+    
+    .urgency-right {
+        max-width: 60%;
+    }
+    
+    .bottom {
+        border-bottom-right-radius: 16px;
+        margin-left: -15px;
+        width: 42.5vw;
+        background-color: #fff;
+        display: flex;
+        justify-content: space-around;
+        text-align: center;
+        padding: 4px;
+        transform: translate(0px, 14px);
+    }
+    
+    .special {
+        background-color: #92ABCE;
+        padding: 4px;
+        border-radius: 4px;
+    }
+    
+    .btn {
+        width: 100px;
+        border-radius: 32px;
+        background-color: #1C3056;
+        color: white;
+        margin-top: 20px;
+        text-align: justify;
+    }
+    
+    .btn1 {
+        background-color: #fff;
+        color: #1C3056;
+        font-weight: bold;
+        border: 2px solid #1C3056;
+        
+    }
+    
+    .arrow-up {
+        width: 0;
+        height: 0;
+        border-left: 100px solid transparent;
+        border-right: 100px solid transparent;
+        border-bottom: 100px solid #92ABCE;
+    }
+    
+    ul li {
+        list-style-type: circle;
+    }
+    
+    .opt {
+        border-left: 150px solid transparent;
+        border-right: 150px solid transparent;
+        border-bottom: 200px solid #92ABCE;
+    }
+    
+    .circle {
+        background-color: #92ABCE;
+        height: 25px;
+        width: 25px;
+        border-radius: 50%;
+        display: inline-block;
+    }
+    
+    .timeline {
+        position: relative;
+        max-width: 200px;
+        margin: 0 auto;
+    }
+    
+    .timeline::after {
+        content: '';
+        position: absolute;
+        width: 1px;
+        border: 2px dashed #92ABCE;
+        top: 0;
+        bottom: 0;
+        left: 50%;
+        margin-left: -3px;
+        height: 230px;
+        margin-top: 15px;
+    }
+    
+    .cont {
+        padding: 10px 40px;
+        position: relative;
+        background-color: inherit;
+        width: 60%;
+    }
+    
+    .cont::after {
+        content: '';
+        position: absolute;
+        width: 25px;
+        height: 25px;
+        right: -17px;
+        background-color: #92ABCE;
+        border: 4px solid #92ABCE;
+        top: 15px;
+        border-radius: 50%;
+        z-index: 1;
+    }
+    
+    #spl:after {
+        border: 4px solid white;
+        background-color: #1C3056;
+    }
+    
+    .right {
+        left: 50%;
+    }
+    
+    .right::after {
+        left: -16px;
+    }
+</style>
+
+<body>
+    <div class="container">
+        <div class="content">
+            <div class="left " id="timeline-content" style="position: relative;">
+                <h2 class="heading1">creativefuse</h2>
+                <div class="timeline" style="position: absolute;top:200px" class="timeline">
+                    <div class="cont right">
+                        <div class="content1">
+                            <p>Introduction</p>
+
+                        </div>
+                    </div>
+                    <div class="cont right spl" id="spl">
+                        <div class="content1">
+
+                            <p>Human Basics</p>
+
+                        </div>
+                    </div>
+                    <div class="cont right">
+                        <div class="content1">
+                            <p>HelpDesk Request</p>
+
+                        </div>
+                    </div>
+                    <div class="cont right">
+                        <div class="content1">
+                            <p>Confirmation</p>
+
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="circle" style="position: absolute;top:600px;left:150px;"></div>
+                <div class="arrow-up" style="position: absolute;top:677px">
+                    <div class="arrow-up opt" style="position: absolute;top:-70px"></div>
+                </div>
+
+            </div>
+            <div class="right">
+                <h3 class="heading">Hey there! Is it safe to assume you're in need of some help? Well, no worries-we've got your back! Let's get started on your HelpDesk Ticket by filling out the info below.
+                </h3>
+                <form action="">
+                    <label for="name">Full Name</label> <br>
+                    <input type="text" name="name" placeholder="You can call me..." id="g"> <br>
+                    <label for="company">Company</label> <br>
+                    <input type="text" name="company" placeholder="I work here..." id="g"> <br>
+                    <label for="email">Email</label> <br>
+                    <input type="email" name="email" placeholder="You can send status updates here..." id="g"> <br>
+                    <label for="request">Request/Need</label> <br>
+                    <div class="need">
+                        <p class="special">
+                            something's broken</p>
+                        <p>content updates</p>
+                        <p>add new functionality</p>
+                        <p>something else</p>
+                    </div>
+
+
+
+                    <label for="urgency">Urgency</label> <br>
+                    <div class="urgency">
+                        <div class="urgency-inner">
+                            <p>urgent</p>
+                            <p class="special">not urgent</p>
+                        </div>
+
+                        <div class="urgency-right">
+                            Urgent request will be prioritized over other items in our pipeline. A 25% urgency charge will be added to the total cost of the completed request.
+                        </div>
+
+
+                    </div>
+
+                </form>
+                <div class="bottom">
+                    <input type="button" value="Back" class="btn btn1">
+                    <input type="button" value="Next" class="btn">
+                </div>
+
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
